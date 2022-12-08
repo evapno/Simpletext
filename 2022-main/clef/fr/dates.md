@@ -5,14 +5,14 @@
 
 ---
 
-* ~~15 November 2021:~~ Labs Registration opens
-* **15 November 2021 - 22 April 2022:** Evaluation Campaign
-* **22 April 2022:** Labs registration closes
-* **6 May 2022:** End of the evaluation cycle
-* **27 May 2022:** Deadline for the submission of participant papers [CEUR-WS]
-* **13 June 2022:** Notification of acceptance for participant papers [CEUR-WS]
-* **1 July 2022:** Deadline for submission of camera-ready participant papers [CEUR-WS]
-* **18-22 July 2022:** Preview of working notes by authors [CEUR-WS]
-* **5 - 8 September 2022:** CLEF 2022 Conference
+* ~~15 novembre 2021:~~ Ouverture des inscriptions aux Labs
+* **15 novembre 2021 - 22 avril 2022:** Campagne d'évaluation
+* **22 avril 2022:** Fermeture des inscriptions aux Labs
+* **6 mai 2022:** Fin du cycle d'évaluation
+* **27 mai 2022:** Deadline du dépôt des articles des participants [CEUR-WS]
+* **13 juin 2022:** Notification d'acceptation des articles des participants [CEUR-WS]
+* **1 juillet 2022:** Deadline du dépôt des articles des participants "prêts à photographier" [CEUR-WS]
+* **18-22 juillet 2022:** Aperçu des notes de travail des auteurs [CEUR-WS]
+* **5 - 8 septembre 2022:** Conférence CLEF 2022
 
-For more details, click [here](https://clef2022.clef-initiative.eu/index.php?page=Pages/schedule.html)
+Pour plus d'informations, cliquez [ici](https://clef2022.clef-initiative.eu/index.php?page=Pages/schedule.html)
