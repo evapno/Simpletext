@@ -6,31 +6,29 @@
 
 ---
 
-## SimpleText Task Guidelines
+## Directives pour les tâches SimpleText
 
-We invite you to submit both automatic and manual runs! Manual intervention should be reported.
+Nous vous invitons à soumettre aussi bien des parcours automatiques que manuels ! Les interventions manuelles doivent être signalées.
 
 ---
 
-<button>[Access](./tasks)</button> | <button>[Shared task 1](./task1)</button> | <button>[Shared task 2](./task2)</button> | <button>[Shared task 3](./task3)</button>| <button>[Unshared task 4](./task4)</button>
+Accès | Tâche partagée 1 | Tâche partagée 2 | Tâche partagée 3| Tâche non partagée 4
 
 <br>
 
-## Task 2: What is unclear? Given a passage and a query, rank terms/concepts that are required to be explained for understanding this passage (definitions, context, applications,..).
+## Tâche 2 : Qu'est-ce qui n'est pas clair ? Étant donné un passage et une requête, classez les termes/concepts qui doivent être expliqués pour comprendre ce passage (définitions, contexte, applications,...).
 
-The goal of this task is to decide which terms (up to 5) require explanation and contextualization to help a reader to understand a complex scientific text – for example, with regard to a query, terms that need to be contextualized (with a definition, example and/or use-case). 
-For each passage, participants should provide a ranked list of difficult terms with corresponding scores on the scale 1-3 (3 to be the most difficult terms, while the meaning of terms scored 1 can be derived or guessed) and on the scale 1-5 (5 to be the most difficult terms). 
-Passages (sentences) are considered to be independent, i.e. difficult term repetition is allowed. Term pooling and automatic metrics (accuracy of term binary classification, NDCG for term ranking, kappa statistics...) will be used to evaluate these results.
+Le but de cette tâche est de décider quels mots (jusqu'à 5) nécessitent une explication et une contextualisation pour aider un lecteur à comprendre un texte scientifique complexe - par exemple, en ce qui concerne une requête, les termes qui doivent être contextualisés (avec une définition, un exemple et/ou un cas d'utilisation). Pour chaque passage, les participants doivent fournir une liste classée des termes difficiles avec les notes correspondantes sur l'échelle 1-3 (3 pour les termes les plus difficiles, tandis que le sens des termes notés 1 peut être déduit ou deviné) et sur l'échelle 1-5 (5 pour les termes les plus difficiles). Les passages (phrases) sont considérés comme indépendants, c'est-à-dire que la répétition de termes difficiles est autorisée. Le regroupement des termes et des métriques automatiques (précision de la classification binaire des termes, NDCG pour le classement des termes, statistiques de kappa...) seront utilisés pour évaluer ces résultats.
 
-**Input format:** 
-The train and the test data are provided in JSON and CSV formats with the following fields:
-* `snt_id`: a unique passage (sentence) identifier
-* `source_snt`: passage text
-* `doc_id`: a unique source document identifier
-* `query_id`: a query ID
-* `query_text`: difficult terms should be extracted from sentences with regard to this query
+**Format d'entrée :**
+Les données de formation et de test sont fournies dans les formats JSON et CSV avec les champs suivants :
+* `snt_id`: un identifiant unique de passage (phrase)
+* `source_snt`: texte du passage
+* `doc_id`: un identifiant unique du document source
+* `query_id`: un identifiant de requête
+* `query_text`: mots difficiles à extraire des phrases par rapport à cette requête
 
-*Input example:*
+*Exemple d'entrées :*
 
 ```
 {"snt_id":"G06.2_2548923997_3",
@@ -40,18 +38,18 @@ The train and the test data are provided in JSON and CSV formats with the follow
 "query_text":"self driving"}
 ```
 
-**Output format:** 
+**Format de sortie :** 
 
-List of terms to be contextualized in a **JSON format** or a tabulated file TSV (for manual runs) with the following fields:
-* `run_id`: Run ID starting with **team_id_task_id_**
-* `manual`: Whether the run is manual {0,1}
-* `snt_id`: a unique passage (sentence) identifier from the input file 
-* `term`: Term or other phrase to be explained
-* `term_rank_snt`: term difficulty rank within the given sentence
-* `score_5`: term difficulty score on the scale from 1 to 5 (5 to be the most difficult terms)
-* `score_3`: term difficulty score on the scale from 1 to 3 (3 to be the most difficult terms)
+Liste des termes à contextualiser dans un **format JSON** ou un fichier tabulé **TSV** (pour les runs manuels) avec les champs suivants :
+* `run_id`: un ID d'exécution commençant par **team_id_task_id_**
+* `manual`: Si l'exécution est manuelle {0,1}
+* `snt_id`: un identifiant unique de passage (phrase) du fichier d'entrée 
+* `term`: mot ou autre phrase à expliquer
+* `term_rank_snt`: rang de difficulté du terme dans la phrase donnée
+* `score_5`: score de difficulté du mot sur une échelle de 1 à 5 (5 les mots les plus difficiles)
+* `score_3`: score de difficulté du mot sur uen échelle de 1 à 3 (3 les mots les plus difficiles)
 
-*Output example*:
+*Exemple de sortie*:
 
 ```{json}
 {"run_id":"NP_task_2_run1",
@@ -94,32 +92,30 @@ List of terms to be contextualized in a **JSON format** or a tabulated file TSV 
 "score_3":3}
 ```
 
-*Output format checker*
+*Vérificateur du format de sortie*
 
-You can use this python3 script to check the output format. The script requires Python 3 and the Pandas library:
-[Download python output checker](../check_format.py)
+Vous pouvez utiliser ce script python3 pour vérifier le format de sortie. Le script nécessite Python 3 et la bibliothèque Pandas : [Télécharger python output checker](../check_format.py)
 
-**Disclaimer:** By downloading and using these data, you agree to the terms of use. Any use of the data for any purpose other than academic research, would be in violation of the intended use of these data. 
+**Avis de non-responsabilité :** En téléchargeant et en utilisant ces données, vous acceptez les conditions d'utilisation. Toute utilisation des données à des fins autres que la recherche universitaire constituerait une violation de l'utilisation prévue de ces données. 
 
-Therefore, by downloading and using these data you give the following assurances with respect to the SimpleText data:
-1. You will not use nor permit others to use the data in the SimpleText datasets in any way except for classes and academic research.
-2. You will not at any time disclose, give, or transmit (in any manner or form or for any purpose) the data (or any portion thereof) to any location or person, including but not limiting to making the data available on the Internet, and copying the data onto any cloud-based storage system.
-3. You will not release nor permit others to release the dataset or any part of it to any person. 
+Par conséquent, en téléchargeant et en utilisant ces données, vous donnez les assurances suivantes concernant les données SimpleText :
+1. Vous n'utiliserez ni ne permettrez à d'autres d'utiliser les données des ensembles de données SimpleText de quelque manière que ce soit, sauf pour les cours et la recherche universitaire
+2. À aucun moment vous ne divulguerez, ne donnerez ou ne transmettrez (de quelque manière, sous quelque forme ou à quelque fin que ce soit) les données (ou toute partie de celles-ci) à quelque endroit ou personne que ce soit, y compris, mais sans s'y limiter, en rendant les données disponibles sur Internet et en copiant les données sur tout système de stockage en nuage
+3. Vous ne divulguerez pas et ne permettrez pas à d'autres de divulguer l'ensemble de données ou toute partie de celui-ci à quiconque. 
 
-In case of violation of the conditions for access to the data for scientific purposes, this access may be withdrawn from the research entity and/or from the researcher. The research entity may also be liable to pay compensation for damages for third parties or asked to take disciplinary action against the offending researcher. 
+En cas de violation des conditions d'accès aux données à des fins scientifiques, cet accès peut être retiré à l'entité de recherche et/ou au chercheur. L'entité de recherche peut également être tenue de payer des dommages et intérêts à des tiers ou être invitée à prendre des mesures disciplinaires à l'encontre du chercheur fautif. 
+ 
+### Évaluation
+Le regroupement des termes et des métriques automatiques (précision de la classification binaire des termes, NDCG pour le classement des termes, statistiques de kappa...) seront utilisés pour évaluer ces résultats.
 
+### Soumission des résultats :
+Les participants doivent placer leurs résultats d'exécution dans le dossier Documents créé pour leur utilisateur et les **soumettre par e-mail** à *contact@simpletext-project.com*.
 
-### Evaluation
-Term pooling and automatic metrics (accuracy of term binary classification, NDCG for term ranking, kappa statistics...) will be used to evaluate these results.
+L'objet de l'e-mail doit être au format **[CLEF TASK 2] TEAM\_ID**. 
 
-### Result submission:
-Participants should put their run results into the folder Documents created for their user and **submit them by email** to *contact@simpletext-project.com*.
+Les séries doivent être soumises sous la forme d'un dossier ZIP contenant les fichiers JSON correspondants. Les passages manuels peuvent être soumis en format CSV. 
 
-The email subject has to be in the format **\[CLEF TASK 2] TEAM_ID**. 
-
-Runs should be submitted as a <ins>ZIP folder of the corresponding JSON files</ins>. Manual runs are allowed to be submitted in a CSV format. 
-
-A confirmation email will be sent within 2 days after the submission deadline. 
+Un courriel de confirmation sera envoyé dans les deux jours suivant la date limite de soumission.  
 
 ## Comment citer un document
 Si vous étendez ou utilisez ce travail, veuillez citer [l'article](https://doi.org/10.1007/978-3-031-13643-6_28) où il a été introduit :
