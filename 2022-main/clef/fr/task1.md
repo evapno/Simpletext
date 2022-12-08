@@ -7,42 +7,42 @@
 
 ---
 
-## SimpleText Task Guidelines
+## Directives pour les tâches SimpleText
 
-We invite you to submit both automatic and manual runs! Manual intervention should be reported.
+Nous vous invitons à soumettre aussi bien des interventions automatiques que manuelles ! Les interventions manuelles doivent être signalées.
 
 ---
 
-<button>[Access](./tasks)</button> | <button>[Shared task 1](./task1)</button> | <button>[Shared task 2](./task2)</button> | <button>[Shared task 3](./task3)</button>| <button>[Unshared task 4](./task4)</button>
+<button>[Accéder](./tasks)</button> | <button>[Tâche partagée 1](./task1)</button> | <button>[Tâche partagée 2](./task2)</button> | <button>[Tâche partagée 3](./task3)</button>| <button>[Tâche non-partagée 4](./task4)</button>
 
 <br>
 
-## Task 1:  What is in (or out)? Select passages to include in a simplified summary, given a query.
+## Tâche 1:  Ce qui est dedans (ou dehors) ? Sélectionner les passages à inclure dans un résumé simplifié, à partir d'une requête.
 
-The task aims at finding references in computer science that could be inserted as citations in original press articles of general audience for illustration, fact checking or actualization. For each of the selected references, more relevant sentences need to be extracted. These passages can be complex and require further simplification to be carried out in tasks 2 and 3. Task 1 focus on content retrieval.
+La tâche vise à trouver des références en informatique qui pourraient être insérées comme citations dans des articles de presse originaux d'audience générale à des fins d'illustration, de vérification des faits ou d'actualisation. Pour chacune des références sélectionnées, des phrases plus pertinentes doivent être extraites. Ces passages peuvent être complexes et nécessitent une simplification supplémentaire qui sera effectuée dans les tâches 2 et 3. La tâche 1 se concentre sur l'extraction de contenu.
 
-**Corpus: DBLP + abstracts**
+**Corpus: DBLP + résumés**
 
-We use the Citation Network Dataset: DBLP+Citation, [ACM Citation network](https://www.aminer.org/citation). An ElasticSearch index is provided to participants accessible through a GUI API. A json dump of the index is also available for participants.
+Nous utilisons la base de données Citation Network : DBLP+Citation, [ACM Citation network](https://www.aminer.org/citation). Un index ElasticSearch est fourni aux participants, accessible via une API GUI. Un dump json de l'index est également disponible pour les participants.
 
-**Topics: Press articles**
+**Sujets : articles de presse**
 
-Topics are a selection of 40 press article. 20 from a major international newspaper for a general audience and 20 from [Tech Xplore](https://techxplore.com/), enriched with queries manually extracted from the content of the article. It has been checked that at least 5 relevant abstracts can be found for for each query.
+Les sujets sont une sélection de 40 articles de presse. 20 provenant d'un grand journal international grand public et 20 de [Tech Xplore](https://techxplore.com/), enrichis de requêtes extraites manuellement du contenu de l'article. Il a été vérifié qu'au moins 5 résumés pertinents peuvent être trouvés pour chaque requête.
 
-**Output format:**
+**Format de sortie :**
  
-Results should be provided in a TREC style tabulated format (with a ".csv" extention). The following columns are required (include these as the first line):
+Les résultats doivent être fournis dans un format tabulé de type TREC (avec une extension ".csv"). Les colonnes suivantes sont obligatoires (les inclure en première ligne) :
 
-1. run_id: Run ID starting with teamid, followed by "_task1_" and run_name
-2. manual: Whether the run is manual {0,1}
-3. topic_id: Topic ID
-4. query_id: Query ID used to retrieve the document (if one of the queries provided for the topic was used; 0 otherwise)
-5. doc_id: ID of the retrieved document (to be extracted from the json output)
-6. passage: Text of the selected passage
+1. run_id : ID de l'exécution commençant par teamid, suivi de "_task1_" et de run_name.
+2. manual : Si l'exécution est manuelle {0,1}
+3. topic_id : ID du sujet
+4. query_id : ID de la requête utilisée pour récupérer le document (si une des requêtes fournies pour le sujet a été utilisée ; 0 sinon)
+5. doc_id : ID du document récupéré (à extraire de la sortie json)
+6. passage : Texte du passage sélectionné
  
-For each topic, the maximum number of distinct DBLP references (_id json field) is 100 and the total length of passages should not exceed 1000 tokens.
+Pour chaque sujet, le nombre maximum de références DBLP distinctes (champ _id json) est de 100 et la longueur totale des passages ne doit pas dépasser 1000 tokens.
 
-*Output example*:
+*Exemple de sortie*:
 
 | run_id | manual | topic_id | query_id | doc_id | passage |
 |:-------|:-------|:---------|:-------|:--------|:-----|
