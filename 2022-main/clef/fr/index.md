@@ -90,11 +90,11 @@ English queries: For this edition queries are a selection of recent press titles
 <br/>•	DBLP full dump in the JSON.GZ format
 <br/>•	DBLP abstracts extracted for each topic in the following MD format (doc_id, year, abstract)
 
-## How to Cite
-If you extend or use this work, please cite the [paper](https://doi.org/10.1007/978-3-031-13643-6_28) where it was introduced:
+## Comment citer un document
+Si vous étendez ou utilisez ce travail, veuillez citer le [document](https://doi.org/10.1007/978-3-031-13643-6_28) where it was introduced:
 ```
 Liana Ermakova, Eric SanJuan, Jaap Kamps, Stéphane Huet, Irina Ovchinnikova, Diana Nurbakova, 
-Sílvia Araújo, Radia Hannachi, Elise Mathurin, and Patrice Bellot. 2022. 
+Sílvia Araújo, Radia Hannachi, Elise Mathurin, et Patrice Bellot. 2022. 
 Overview of the CLEF 2022 SimpleText Lab: Automatic Simplification of Scientific Texts. 
 In Experimental IR Meets Multilinguality, Multimodality, and Interaction: 13th International 
 Conference of the CLEF Association, CLEF 2022, Bologna, Italy, September 5–8, 2022, Proceedings. 
