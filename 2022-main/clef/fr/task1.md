@@ -13,7 +13,7 @@ Nous vous invitons à soumettre aussi bien des interventions automatiques que ma
 
 ---
 
-<button>[Accéder](./tasks)</button> | <button>[Tâche partagée 1](./task1)</button> | <button>[Tâche partagée 2](./task2)</button> | <button>[Tâche partagée 3](./task3)</button>| <button>[Tâche non-partagée 4](./task4)</button>
+<button>[Accès](./tasks)</button> | <button>[Tâche partagée 1](./task1)</button> | <button>[Tâche partagée 2](./task2)</button> | <button>[Tâche partagée 3](./task3)</button>| <button>[Tâche non-partagée 4](./task4)</button>
 
 <br>
 
