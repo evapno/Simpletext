@@ -1,4 +1,4 @@
-# Tâches SimpleText@CLEF-2022 Pilot
+# Tâches pilotes SimpleText@CLEF-2022
 
 [Accueil](./) | [Appel à contributions](./CFP) | [Dates importantes](./dates) | [Tâches](./tasks)  | [Outils](./tools) 
 [Programme](./program) | [Publications](./publications) | [Organisateurs](./organisers) | [Contact](./contact) | [CLEF-2023](https://simpletext-project.com/2023/clef)
