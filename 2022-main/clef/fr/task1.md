@@ -50,43 +50,43 @@ Pour chaque sujet, le nombre maximum de références DBLP distinctes (champ _id 
 | ST1_task1_1 | 0 | G01 | G01.1 | 3000234933 | People are becoming increasingly comfortable using Digital Assistants (DAs) to interact with services or connected objects |
 | ST1_task1_1 | 0 | G01 | G01.2 | 1448624402 | As extensive experimental research has shown individuals suffer from diverse biases in decision-making. |
 
-*Output format checker*
+*Vérificateur du format de sortie*
 
-You can use this python3 script to check the output format. The script requires Python 3 and the Pandas library:
-[Download python output checker](../check_format.py)
+Vous pouvez utiliser ce script python3 pour vérifier le format de sortie. Ce script nécessite Python 3 et la bibliothèque Pandas :
+[Télécharger le vérificateur de sortie python](../check_format.py)
 
-**Disclaimer:** By downloading and using these data, you agree to the terms of use. Any use of the data for any purpose other than academic research, would be in violation of the intended use of these data. 
+**Disclaimer:** En téléchargeant et en utilisant ces données, vous acceptez les conditions d'utilisation. Toute utilisation des données à des fins autres que la recherche universitaire constituerait une violation de l'utilisation prévue de ces données. 
 
-Therefore, by downloading and using these data you give the following assurances with respect to the SimpleText data:
-1. You will not use nor permit others to use the data in the SimpleText datasets in any way except for classes and academic research.
-2. You will not at any time disclose, give, or transmit (in any manner or form or for any purpose) the data (or any portion thereof) to any location or person, including but not limiting to making the data available on the Internet, and copying the data onto any cloud-based storage system.
-3. You will not release nor permit others to release the dataset or any part of it to any person. 
+Par conséquent, en téléchargeant et en utilisant ces données, vous donnez les assurances suivantes concernant les données SimpleText :
+1. Vous n'utiliserez pas et ne permettrez pas à d'autres d'utiliser les données dans les ensembles de données SimpleText de quelque manière que ce soit, sauf pour les cours et la recherche universitaire.
+2. Vous ne divulguerez, ne donnerez ou ne transmettrez à aucun moment (de quelque manière ou forme que ce soit ou à quelque fin que ce soit) les données (ou toute partie de celles-ci) à tout endroit ou personne, y compris, mais sans s'y limiter, la mise à disposition des données sur Internet et la copie des données sur tout système de stockage basé sur le cloud.
+3. Vous ne libérerez pas et ne permettrez pas à d'autres de libérer l'ensemble des données ou toute partie de celles-ci à toute personne. 
 
-In case of violation of the conditions for access to the data for scientific purposes, this access may be withdrawn from the research entity and/or from the researcher. The research entity may also be liable to pay compensation for damages for third parties or asked to take disciplinary action against the offending researcher. 
+En cas de violation des conditions d'accès aux données à des fins scientifiques, cet accès peut être retiré à l'entité de recherche et/ou au chercheur. L'entité de recherche peut également être tenue de payer des dommages et intérêts à des tiers ou être invitée à prendre des mesures disciplinaires à l'encontre du chercheur fautif. 
 
 
-### Evaluation  
-Sentence pooling and automatic metrics will be used to evaluate these results. The relevance of the source document will be evaluated as well as potential unresolved anaphora issues.
+### Évaluation  
+Le regroupement de phrases et les métriques automatiques seront utilisés pour évaluer ces résultats. La pertinence du document source sera évaluée ainsi que les éventuels problèmes d'anaphore non résolus.
 
-### Result submission:
-Participants should put their run results into the folder Documents created for their user and **submit them by email** to *contact@simpletext-project.com*.
+### Résultat des dépôts :
+Les participants doivent placer leurs résultats d'exécution dans le dossier Documents créé pour leur utilisateur et les **soumettre par e-mail** à *contact@simpletext-project.com*.
 
-The email subject has to be in the format **\[CLEF TASK 1] TEAM_ID**. 
+L'objet de l'e-mail doit être au format **[CLEF TASK 1] TEAM_ID**. 
 
-Runs should be submitted as a file in a TSV format. 
+Les parcours doivent être soumis sous forme de fichier au format TSV. 
 
-A confirmation email will be sent within 2 days after the submission deadline. 
+Un courriel de confirmation sera envoyé dans les 2 jours suivant la date limite de soumission. 
 
-## How to Cite
-If you extend or use this work, please cite the [paper](https://doi.org/10.1007/978-3-031-13643-6_28) where it was introduced:
+## Comment citer le document
+Si vous étendez ou utilisez ce travail, veuillez citer [l'article](https://doi.org/10.1007/978-3-031-13643-6_28) où il a été présenté :
 ```
 Liana Ermakova, Eric SanJuan, Jaap Kamps, Stéphane Huet, Irina Ovchinnikova, Diana Nurbakova, 
-Sílvia Araújo, Radia Hannachi, Elise Mathurin, and Patrice Bellot. 2022. 
+Sílvia Araújo, Radia Hannachi, Elise Mathurin, et Patrice Bellot. 2022. 
 Overview of the CLEF 2022 SimpleText Lab: Automatic Simplification of Scientific Texts. 
-In Experimental IR Meets Multilinguality, Multimodality, and Interaction: 13th International 
-Conference of the CLEF Association, CLEF 2022, Bologna, Italy, September 5–8, 2022, Proceedings. 
+In Experimental IR Meets Multilinguality, Multimodality, and Interaction: 13e Conférence Internationale 
+ de CLEF Association, CLEF 2022, Bologne, Italie, 5-8 Septembre, 2022, Compte-rendus. 
 Springer-Verlag, Berlin, Heidelberg, 470–494. https://doi.org/10.1007/978-3-031-13643-6_28
 ```
-[Paper](https://doi.org/10.1007/978-3-031-13643-6_28)
+[Article](https://doi.org/10.1007/978-3-031-13643-6_28)
 
-[Dowload .BIB](../../BibTeX/ermakova_overview_2022.bib)
+[Téléchargez .BIB](../../BibTeX/ermakova_overview_2022.bib)
