@@ -96,7 +96,7 @@ Si vous étendez ou utilisez ce travail, veuillez citer [l'article](https://doi.
 Liana Ermakova, Eric SanJuan, Jaap Kamps, Stéphane Huet, Irina Ovchinnikova, Diana Nurbakova, 
 Sílvia Araújo, Radia Hannachi, Elise Mathurin, et Patrice Bellot. 2022. 
 Vue d'ensemble du Laboratoire Simpletext CLEF 2022 : "Automatic Simplification of Scientific Texts". 
-"In Experimental IR Meets Multilinguality, Multimodality, and Interaction" : 13e Conférence internationale de la CLEF Association, CLEF 2022, Bologne, Italie, septembre 5–8, 2022, Proceedings. 
+"In Experimental IR Meets Multilinguality, Multimodality, and Interaction" : 13e Conférence internationale de la CLEF Association, CLEF 2022, Bologne, Italie, 5-8 septembre, 2022, Compte-rendus. 
 Springer-Verlag, Berlin, Heidelberg, 470–494. https://doi.org/10.1007/978-3-031-13643-6_28
 ```
 [Article](https://doi.org/10.1007/978-3-031-13643-6_28)
